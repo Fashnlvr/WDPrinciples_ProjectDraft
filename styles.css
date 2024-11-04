@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Proxima Nova', Arial, sans-serif;
   color: #333;
   background-color: #f4f4f9;
 }
@@ -34,6 +34,7 @@ header {
 .logo {
   font-size: 1.5em;
   font-weight: bold;
+  color: #33cc00;
 }
 
 /* Hero Section */
@@ -46,7 +47,8 @@ header {
 }
 
 .hero-content h1 {
-  font-size: 2.5em;
+  font-size: 50px;
+  color: #33cc00;
 }
 
 .hero-content p {
@@ -56,21 +58,15 @@ header {
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff6347;
-  color: #fff;
+  background-color: #ffbe00;
+  color: #222;
   border-radius: 5px;
   font-weight: bold;
-  animation: pulse 1.5s infinite;
+  transition: transform 0.3s ease;
 }
 
-/* CSS Animation */
-@keyframes pulse {
-  0%, 100% {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(1.1);
-  }
+.cta-button:hover {
+  transform: scale(1.1);
 }
 
 /* Section Styles */
@@ -80,7 +76,8 @@ header {
 }
 
 .section h2 {
-  font-size: 2em;
+  font-size: 45px;
+  color: #ffbe00;
   margin-bottom: 20px;
 }
 
@@ -114,6 +111,25 @@ header {
   border-radius: 5px;
 }
 
+/* Typography */
+h1 {
+  font-family: 'Proxima Nova Extrabold';
+}
+
+h2 {
+  font-family: 'Proxima Nova Extrabold';
+}
+
+p {
+  font-family: 'Proxima Nova Regular';
+  font-size: 14px;
+}
+
+.inline-link {
+  color: #7373b9;
+  font-weight: bold;
+}
+
 /* Footer */
 footer {
   background-color: #222;
@@ -123,5 +139,5 @@ footer {
 }
 
 .footer-links a {
-  color: #ff6347;
+  color: #7373b9;
 }

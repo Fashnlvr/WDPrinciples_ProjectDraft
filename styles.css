@@ -1,3 +1,18 @@
+/* Colors from Style Guide */
+:root {
+  --header1-color: #33cc00;      /* Header 1 Color */
+  --header2-color: #ffbe00;      /* Header 2 Color */
+  --header4-color: #fec5a7;      /* Header 4 Color */
+  --header5-color: #7373b9;      /* Header 5 Color */
+  --body-text-color: #000000;    /* Default Text Color */
+  --button-bg-color: #ffbe00;    /* Button Background Color */
+  --button-text-color: #222222;  /* Button Text Color */
+  --link-color: #7373b9;         /* Inline Link Color */
+  --footer-bg-color: #222222;    /* Footer Background Color */
+  --footer-text-color: #ffffff;  /* Footer Text Color */
+  --background-color: #f4f4f9;   /* Page Background Color */
+}
+
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -7,8 +22,8 @@
 
 body {
   font-family: 'Proxima Nova', Arial, sans-serif;
-  color: #333;
-  background-color: #f4f4f9;
+  color: var(--body-text-color);
+  background-color: var(--background-color);
 }
 
 a {
@@ -22,19 +37,19 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #222;
-  color: #fff;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
 }
 
 .nav-links a {
   margin: 0 10px;
-  color: #fff;
+  color: var(--footer-text-color);
 }
 
 .logo {
   font-size: 1.5em;
   font-weight: bold;
-  color: #33cc00;
+  color: var(--header1-color);
 }
 
 /* Hero Section */
@@ -42,24 +57,25 @@ header {
   background: url('hero.jpg') no-repeat center/cover;
   padding: 100px 20px;
   text-align: center;
-  color: #fff;
+  color: var(--footer-text-color);
   position: relative;
 }
 
 .hero-content h1 {
   font-size: 50px;
-  color: #33cc00;
+  color: var(--header1-color); /* Header 1 color */
 }
 
 .hero-content p {
   margin: 10px 0 20px;
+  font-family: 'Proxima Nova Regular';
 }
 
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ffbe00;
-  color: #222;
+  background-color: var(--button-bg-color); /* Button background color */
+  color: var(--button-text-color);           /* Button text color */
   border-radius: 5px;
   font-weight: bold;
   transition: transform 0.3s ease;
@@ -77,7 +93,7 @@ header {
 
 .section h2 {
   font-size: 45px;
-  color: #ffbe00;
+  color: var(--header2-color); /* Header 2 color */
   margin-bottom: 20px;
 }
 
@@ -114,10 +130,12 @@ header {
 /* Typography */
 h1 {
   font-family: 'Proxima Nova Extrabold';
+  color: var(--header1-color);
 }
 
 h2 {
   font-family: 'Proxima Nova Extrabold';
+  color: var(--header2-color);
 }
 
 p {
@@ -126,18 +144,18 @@ p {
 }
 
 .inline-link {
-  color: #7373b9;
+  color: var(--link-color); /* Inline link color */
   font-weight: bold;
 }
 
 /* Footer */
 footer {
-  background-color: #222;
-  color: #fff;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
   padding: 20px;
   text-align: center;
 }
 
 .footer-links a {
-  color: #7373b9;
+  color: var(--link-color); /* Link color in footer */
 }

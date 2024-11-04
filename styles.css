@@ -1,127 +1,154 @@
-/* Reset and Base Styles */
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f9;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #222;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
 
-.nav-links a {
-    margin: 0 10px;
-    color: #fff;
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
+header nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
 }
 
 /* Hero Section */
 .hero {
-    background: url('hero.jpg') no-repeat center/cover;
-    padding: 100px 20px;
-    text-align: center;
-    color: #fff;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
 }
 
-.hero-content h1 {
-    font-size: 2.5em;
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-.hero-content p {
-    margin: 10px 0 20px;
+.hero p {
+  font-size: 18px;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff6347;
-    color: #fff;
-    border-radius: 5px;
-    font-weight: bold;
-    animation: pulse 1.5s infinite;
+.btn-explore {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  animation: pulse 1.5s infinite;
 }
 
-/* CSS Animation */
 @keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
 }
 
-/* Section Styles */
-.section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+/* Franchise Overview */
+.overview {
+  padding: 40px;
+  text-align: center;
 }
 
 .overview-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .overview-content img {
-    width: 200px;
-    border-radius: 5px;
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
 }
 
-.movie-grid, .spinoff-grid, .media-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Main Movies Section */
+.main-movies {
+  padding: 40px;
+  text-align: center;
 }
 
-.movie-item, .spinoff-item, .media-item {
-    width: 150px;
-    text-align: center;
+.movie-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.movie-item img, .spinoff-item img, .media-item img {
-    width: 100%;
-    border-radius: 5px;
+.movie {
+  text-align: center;
+}
+
+.movie img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Spinoff Series and Movies */
+.spinoffs {
+  padding: 40px;
+  text-align: center;
+}
+
+.spinoff-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Other Media */
+.other-media {
+  padding: 40px;
+  text-align: center;
+}
+
+.media-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.media img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
 }
 
 /* Footer */
 footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
 }
 
 .footer-links a {
-    color: #ff6347;
+  color: #fff;
+  margin: 0 5px;
+  text-decoration: none;
 }
